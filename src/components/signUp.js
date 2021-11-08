@@ -90,9 +90,9 @@ export default function SignUp() {
                 direction="row"
                 style={{ justifyContent: "space-between" }}
               >
-                {/* <Link to="/sign-up">
+                <Link to="/sign-up">
                   <p>Create account</p>
-                </Link> */}
+                </Link>
 
                 <Button
                   variant="contained"

@@ -6,7 +6,7 @@ const composeEnhancers =
   process.env.NODE_ENV !== 'production' &&
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-      name: 'IMOBILITY', actionsBlacklist: ['REDUX_STORAGE_SAVE']
+      name: 'Q-taps', actionsBlacklist: ['REDUX_STORAGE_SAVE']
     }) : compose;
 const enhancer = composeEnhancers(
   applyMiddleware(thunk),

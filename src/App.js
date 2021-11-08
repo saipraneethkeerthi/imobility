@@ -8,27 +8,11 @@ import SignUp from "./components/signUp"
 
 // const cookies = new Cookies();
 
-const AppContainer = ({ common, isFetchingAgencyAttr, user, agencyTheme }) => {
+const AppContainer = () => {
   const dispatch = useDispatch();
   const [role, setRole] = useState(""); 
 
   
-  // const roleDetails = (data) => {
-  //   const success = (data) => {
-  //     console.log("user details", data);
-  //     setRole(data.agency_role_id);
-  //   };
-  //   const failure = (err) => {
-  //     console.log(err);
-  //   };
-  //   AgencyController.agencyUserDetails(
-  //     data.agency_id,
-  //     data.user_id,
-  //     data.access_token,
-  //     success,
-  //     failure
-  //   );
-  // };
 
   
   function renderPage(Component, name) {
@@ -42,7 +26,7 @@ const AppContainer = ({ common, isFetchingAgencyAttr, user, agencyTheme }) => {
           <Route
             exact
             path="/"
-            render={() => renderPage(Login, "Login")}
+            render={Login}
           />
           <Route
             exact
